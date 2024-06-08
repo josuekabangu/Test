@@ -1,0 +1,42 @@
+<!-- shop/product_list.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Liste des produits</h2>
+
+    <!-- Options de tri -->
+    <div class="sorting">
+        <a href="?sort_by=price">Trier par prix</a> |
+        <a href="?sort_by=name">Trier par nom</a>
+    </div>
+
+    <!-- Liste des produits -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {% for product in products %}
+        <div class="col">
+            <div class="card shadow-sm">
+                <!-- Affiche l'image du produit ou une image par défaut -->
+                <img class="bd-placeholder-img card-img-top" src="{{ product.image_url }}" alt="{{ product.name }}" width="100%" height="225">
+
+                <div class="card-body">
+                    <h3 class="card-title">{{ product.name }}</h3>
+                    <p class="card-text">{{ product.description }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <!-- Les URLs doivent être configurées dans votre fichier urls.py -->
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-outline-secondary">Voir</a>
+                            <!-- Bouton Ajouter au panier -->
+                            <a href="{% url 'add_to_cart' product.id %}" class="btn btn-sm btn-outline-secondary">Ajouter au panier</a>
+                        </div>
+                        <small class="text-muted">{{ product.price }} €</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p>Aucun produit disponible.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
