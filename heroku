@@ -1,0 +1,108 @@
+Déployer une application Django sur Heroku nécessite plusieurs étapes. Voici un guide étape par étape pour vous aider à déployer votre application Django sur Heroku :
+Prérequis
+
+    Avoir un compte Heroku.
+    Avoir installé Git sur votre machine.
+    Avoir installé Heroku CLI (Command Line Interface).
+
+Étape 1 : Préparer votre application Django
+
+    Créer un environnement virtuel (si ce n'est pas déjà fait) et installer Django ainsi que toutes les dépendances nécessaires.
+
+    python -m venv venv
+    source venv/bin/activate  # Sur Windows: venv\Scripts\activate
+    pip install django gunicorn dj-database-url whitenoise psycopg2-binary
+
+Créer un fichier Procfile à la racine de votre projet Django (sans extension) qui contient :
+
+web: gunicorn your_project_name.wsgi
+
+Remplacez your_project_name par le nom de votre projet Django.
+
+Configurer les fichiers statiques en ajoutant whitenoise dans votre fichier settings.py :
+
+MIDDLEWARE = [
+    # ...
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # ...
+]
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+Configurer la base de données pour utiliser dj-database-url dans settings.py :
+
+import dj_database_url
+
+DATABASES = {
+    'default': dj_database_url.config(default='sqlite:///db.sqlite3', conn_max_age=600)
+}
+
+Créer un fichier runtime.txt pour spécifier la version de Python à utiliser :
+
+python-3.x.x
+
+Remplacez 3.x.x par la version de Python que vous utilisez.
+
+Créer un fichier requirements.txt qui liste toutes les dépendances de votre application :
+
+pip freeze > requirements.txt
+
+Étape 2 : Initialiser votre dépôt Git
+
+    Initialiser un dépôt Git (si ce n'est pas déjà fait) :
+
+    git init
+
+Ajouter tous les fichiers à Git et faire un commit :
+
+git add .
+git commit -m "Initial commit"
+
+Étape 3 : Créer une application Heroku
+
+    Connectez-vous à Heroku via la CLI :
+
+    heroku login
+
+Créez une nouvelle application Heroku :
+
+heroku create your-app-name
+
+    Remplacez your-app-name par le nom que vous souhaitez donner à votre application.
+
+Étape 4 : Déployer sur Heroku
+
+    Ajoutez le remote de Heroku à votre dépôt Git :
+
+    heroku git:remote -a your-app-name
+
+Poussez votre code sur Heroku :
+
+git push heroku master
+
+Étape 5 : Configurer les variables d'environnement
+
+    Définissez les variables d'environnement nécessaires, telles que SECRET_KEY, DEBUG, et les variables de configuration de la base de données sur Heroku :
+
+    heroku config:set SECRET_KEY='your_secret_key'
+    heroku config:set DEBUG=False
+
+Étape 6 : Exécuter les migrations et collecter les fichiers statiques
+
+    Exécutez les migrations sur Heroku :
+
+    heroku run python manage.py migrate
+
+Collectez les fichiers statiques :
+
+heroku run python manage.py collectstatic
+
+Étape 7 : Ouvrir votre application
+
+    Ouvrez votre application dans le navigateur :
+
+    heroku open
+
+Votre application Django devrait maintenant être déployée sur Heroku. Assurez-vous de tester votre application et de vérifier que tout fonctionne comme prévu.
