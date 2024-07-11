@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<header class="container-fluid bg-light py-5">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-6">
+              <h1 class="display-4">Service de Makeup Professionnel</h1>
+              <p class="lead">Nous offrons des services de maquillage personnalisés pour toutes les occasions, garantissant un look impeccable et sophistiqué.</p>
+          </div>
+          <div class="col-md-6">
+              <img src="{% static 'img/makeup-artist.png' %}" alt="Makeup Artist" class="img-fluid rounded medium-img">
+          </div>
+      </div>
+  </div>
+</header>
+<!-- Sections -->
+<section id="produits" class="container py-5">
+  <h2 class="text-center">Nos Produits</h2>
+  <p class="text-center">Découvrez notre gamme de produits de maquillage de haute qualité.</p>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 1">
+              <div class="card-body">
+                  <h5 class="card-title">Fond de Teint</h5>
+                  <p class="card-text">Un fond de teint qui offre une couverture parfaite et une finition naturelle.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 2">
+              <div class="card-body">
+                  <h5 class="card-title">Rouge à Lèvres</h5>
+                  <p class="card-text">Des couleurs vives et longue tenue pour des lèvres irrésistibles.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 3">
+              <div class="card-body">
+                  <h5 class="card-title">Palette de Fards à Paupières</h5>
+                  <p class="card-text">Une palette versatile pour créer des looks de jour comme de nuit.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="services" class="container py-5 bg-light">
+  <h2 class="text-center">Nos Services</h2>
+  <p class="text-center">Explorez nos services de maquillage pour toutes les occasions.</p>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Service 1">
+              <div class="card-body">
+                  <h5 class="card-title">Maquillage de Mariée</h5>
+                  <p class="card-text">Un maquillage sublime pour le jour de votre mariage.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Service 2">
+              <div class="card-body">
+                  <h5 class="card-title">Maquillage de Soirée</h5>
+                  <p class="card-text">Des looks glamour pour toutes vos soirées et événements.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Service 3">
+              <div class="card-body">
+                  <h5 class="card-title">Cours de Maquillage</h5>
+                  <p class="card-text">Apprenez les techniques de maquillage avec nos experts.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="blog" class="container py-5">
+  <h2 class="text-center">Blog</h2>
+  <p class="text-center">Lisez nos articles de blog pour des conseils et astuces sur le maquillage.</p>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog 1">
+              <div class="card-body">
+                  <h5 class="card-title">Tendances Maquillage 2024</h5>
+                  <p class="card-text">Découvrez les dernières tendances en matière de maquillage pour 2024.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog 2">
+              <div class="card-body">
+                  <h5 class="card-title">Guide des Peaux Sensibles</h5>
+                  <p class="card-text">Les meilleurs produits et techniques pour les peaux sensibles.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog 3">
+              <div class="card-body">
+                  <h5 class="card-title">Maquillage Écologique</h5>
+                  <p class="card-text">Comment choisir des produits de maquillage respectueux de l'environnement.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="contact" class="container py-5 bg-light">
+  <h2 class="text-center">Contact</h2>
+  <p class="text-center">Contactez-nous pour plus d'informations ou pour réserver un service.</p>
+  <div class="row">
+      <div class="col-md-6 mx-auto">
+          <form>
+              <div class="form-group">
+                  <label for="name">Nom</label>
+                  <input type="text" class="form-control" id="name" placeholder="Votre nom">
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Votre email">
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+<section id="apropos" class="container py-5">
+  <h2 class="text-center">À propos</h2>
+  <p class="text-center">En savoir plus sur notre équipe et notre mission.</p>
+  <div class="row">
+      <div class="col-md-6">
+          <img src="https://via.placeholder.com/500x300" alt="À propos de nous" class="img-fluid rounded mb-4">
+      </div>
+      <div class="col-md-6">
+          <p>Nous sommes une équipe de maquilleurs professionnels dédiés à offrir des services de maquillage de haute qualité pour toutes les occasions. Notre mission est de rendre chaque client magnifique et confiant grâce à notre expertise et à notre passion pour le maquillage.</p>
+          <p>Avec des années d'expérience dans l'industrie de la beauté, nous avons travaillé avec une multitude de clients pour des événements spéciaux, des séances photo, des mariages, et bien plus encore. Notre objectif est de créer des looks personnalisés qui reflètent la beauté unique de chaque individu.</p>
+      </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+  <div class="container text-center">
+      <p>&copy; 2024 MakeupPro. Tous droits réservés.</p>
+  </div>
+</footer>
+
+{% endblock content %}
