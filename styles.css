@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+
+/* Header */
+.medium-img {
+  width: 75%; /* Ajustez ce pourcentage selon vos besoins */
+}
