@@ -7,6 +7,23 @@
     width: 75%; /* Ajustez ce pourcentage selon vos besoins */
   }
 
+  .custom-header {
+    min-height: 600px; /* Ajustez cette valeur selon vos besoins */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 100px; /* Vous pouvez ajuster cette valeur pour ajouter de l'espace en haut */
+    padding-bottom: 100px; /* Vous pouvez ajuster cette valeur pour ajouter de l'espace en bas */
+}
+
+@media (max-width: 768px) {
+    .custom-header {
+        min-height: 400px; /* Ajustez cette valeur pour les écrans plus petits si nécessaire */
+    }
+}
+
+
 /* Produits*/
 .product_section .option_container {
     position: absolute;
