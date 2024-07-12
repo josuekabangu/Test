@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% block content %}
+ <!-- Section Produits -->
+ <section id="produits" class="container py-5 bg-light product_section">
+    <h2 class="text-center">Nos Produits</h2>
+    <p class="text-center">Découvrez notre gamme de produits de maquillage de haute qualité.</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Produit 1 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 1">
+                <div class="card-body">
+                    <h5 class="card-title">Fond de Teint</h5>
+                    <p class="card-text">Un fond de teint qui offre une couverture parfaite et une finition naturelle.</p>
+                    <p class="price text-primary fw-bold">$25.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 2 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 2">
+                <div class="card-body">
+                    <h5 class="card-title">Rouge à Lèvres</h5>
+                    <p class="card-text">Des couleurs vives et longue tenue pour des lèvres irrésistibles.</p>
+                    <p class="price text-primary fw-bold">$15.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 3 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 3">
+                <div class="card-body">
+                    <h5 class="card-title">Palette de Fards à Paupières</h5>
+                    <p class="card-text">Une palette versatile pour créer des looks de jour comme de nuit.</p>
+                    <p class="price text-primary fw-bold">$30.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 4 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 4">
+                <div class="card-body">
+                    <h5 class="card-title">Mascara</h5>
+                    <p class="card-text">Un mascara volumateur pour des cils étoffés et définis.</p>
+                    <p class="price text-primary fw-bold">$20.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 5 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 5">
+                <div class="card-body">
+                    <h5 class="card-title">Eyeliner Liquide</h5>
+                    <p class="card-text">Pour des lignes précises et un regard intense.</p>
+                    <p class="price text-primary fw-bold">$18.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 6 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 6">
+                <div class="card-body">
+                    <h5 class="card-title">Crayon à Sourcils</h5>
+                    <p class="card-text">Définissez vos sourcils avec précision et naturellement.</p>
+                    <p class="price text-primary fw-bold">$12.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 7 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 1">
+                <div class="card-body">
+                    <h5 class="card-title">Fond de Teint</h5>
+                    <p class="card-text">Un fond de teint qui offre une couverture parfaite et une finition naturelle.</p>
+                    <p class="price text-primary fw-bold">$25.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 8 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 2">
+                <div class="card-body">
+                    <h5 class="card-title">Rouge à Lèvres</h5>
+                    <p class="card-text">Des couleurs vives et longue tenue pour des lèvres irrésistibles.</p>
+                    <p class="price text-primary fw-bold">$15.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 9 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 3">
+                <div class="card-body">
+                    <h5 class="card-title">Palette de Fards à Paupières</h5>
+                    <p class="card-text">Une palette versatile pour créer des looks de jour comme de nuit.</p>
+                    <p class="price text-primary fw-bold">$30.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 10 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 4">
+                <div class="card-body">
+                    <h5 class="card-title">Mascara</h5>
+                    <p class="card-text">Un mascara volumateur pour des cils étoffés et définis.</p>
+                    <p class="price text-primary fw-bold">$20.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 11 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 5">
+                <div class="card-body">
+                    <h5 class="card-title">Eyeliner Liquide</h5>
+                    <p class="card-text">Pour des lignes précises et un regard intense.</p>
+                    <p class="price text-primary fw-bold">$18.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produit 12 -->
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow position-relative">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produit 6">
+                <div class="card-body">
+                    <h5 class="card-title">Crayon à Sourcils</h5>
+                    <p class="card-text">Définissez vos sourcils avec précision et naturellement.</p>
+                    <p class="price text-primary fw-bold">$12.00</p>
+                </div>
+                <div class="option_container">
+                    <div class="options">
+                        <a href="#" class="option1">Voir</a>
+                        <a href="#" class="option2">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
